@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /home/alex/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/achuprov/AppData/Local/Microsoft/WindowsApps:/mnt/c/PPF/.ShortCuts:/mnt/c/Users/achuprov/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: unable to get local issuer certificate
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1530:34)
+      at TLSSocket.emit (node:events:390:28)
+      at TLSSocket._finishInit (node:_tls_wrap:944:8)
+      at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:725:12)
+
+npm manifest: 
+  {
+    "name": "minbrowser",
+    "scripts": {
+      "start": "webpack serve --mode development",
+      "build": "webpack --mode production"
+    },
+    "dependencies": {
+      "webpack": "^5.64.4"
+    },
+    "devDependencies": {
+      "webpack-cli": "^4.9.1",
+      "webpack-dev-server": "^4.6.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
