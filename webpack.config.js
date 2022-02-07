@@ -7,6 +7,6 @@ module.exports = {
     devServer: {
         hot: true,
         liveReload: true,
-        port: 3000,
+        port: 3002,
     }
 }
