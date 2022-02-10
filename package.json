@@ -1,5 +1,5 @@
 {
-  "name": "minbrowser",
+  "name": "codeware",
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production"
