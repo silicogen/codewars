@@ -1,14 +1,6 @@
 // https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39
 
-
-const log = m => console.log(m);
 const numsArr = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
-const n = numsArr
-    .reduce((a, v, i) => {
-        a[v] = new Function("f", `return f == undefined ? ${i} : f(${i})`);
-        return a;
-    }, {});
-
 const ops = {
     plus: "+",
     minus: "-",
@@ -16,10 +8,9 @@ const ops = {
     dividedBy: "/"
 }
 
-const opfs = {};
+numsArr.forEach((v, i) => globalThis[v] = new Function("f", `return f == undefined ? ${i} : f(${i})`));
 for (const op in ops) {
-    opfs[op] = new Function("b", `return a => Math.floor(a ${ops[op]} b)`)
+    globalThis[op] = new Function("b", `return a => Math.floor(a ${ops[op]} b)`)
 }
 
-log(n.seven())
-log(n.seven(opfs.times(n.five())) == 35)
+console.log(seven(times(five())) == 35)
