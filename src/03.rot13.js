@@ -23,3 +23,6 @@ function rot13(message) {
     }
     return s;
 }
+
+console.log(rot13("test") == "grfg") 
+console.log(rot13("Test") == "Grfg") 
