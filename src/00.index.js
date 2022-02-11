@@ -6,6 +6,9 @@
 // import "./02.calculatingWithFunctions.v3"
 // import "./04.maximumSubarraySum"
 // import "./04.maximumSubarraySum.v2"
-import "./04.maximumSubarraySum.v3"
+// import "./04.maximumSubarraySum.v3"
+
+// import "./05.firstNon-repeatingCharacter"
+import "./05.firstNon-repeatingCharacter.v2"
 
 // import "./"
